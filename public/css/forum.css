@@ -1,0 +1,106 @@
+body
+{
+  background-color: #F8F6F4;
+  font-family: 'Alegreya', serif;;
+}
+h1
+{
+    font-size: 24px;
+   color: #CF360D;
+}
+h2{
+    font-size:20px;
+    font-weight: bold;
+}
+p
+{
+    font-size: 18px;
+}
+hr
+{
+   border-top: 3px solid rgb(255, 255, 255);
+}
+
+a{
+    color: inherit;
+}
+a:visited{
+    color: inherit;
+}
+a:hover{
+    color: inherit;
+}
+/*Options*/
+
+#options
+{
+    width: 20%;
+    height: 290px;
+    margin: 60px 50px;
+    background-color: #EFE5B6;
+    border-radius: 30px;
+    text-align: center;
+    padding-top: 20px;
+    float: left;
+    position: absolute;
+  
+}
+.optionstext
+{
+    font-size: 20px;
+}
+
+/*Forum*/
+
+#forum
+{
+    width: 70%;
+    min-height: 400px;
+    margin-left: 27%;
+    margin-top: 60px;
+    
+}
+#discussion
+{
+    border: 3px solid #EFE5B6;
+    padding: 20px;
+    margin-bottom: 50px;
+  
+}
+.profile
+
+{
+    height: 50px;
+    display: inline;
+}
+
+
+.vote button{
+    font-size: 18px;
+    border: none;
+    background: none;
+    margin: auto 30px;
+}
+.ans-button{
+    font-size: 18px;
+    margin-top: 0%;
+}
+
+.divider{
+    border-top: 3px solid #dbbe3d;
+}
+
+/* questions page */
+
+.forumQ-border{   
+    height: max-content;
+    margin: 20px auto 40px;
+    border:2px solid #EFE5B6;
+    padding: 30px 30px 0 30px;
+    text-align: center;
+}
+.forumQ-border h3{
+    color: rgb(70, 68, 68);
+}
+
+    

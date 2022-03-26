@@ -1,0 +1,80 @@
+<%- include('partials/header') -%>
+
+<!--Navigation Section-->
+<div  class="nav-new">    
+    <img id="head-icon" src="/images/Alpha-icon.png">
+    <div id="header" style="transform: translateY(12px);">
+        <a href="/home"><p class="head-span" >Home</p></a>
+        <a href="/forum"><p class="head-span" id="activenav">Forum</p></a>
+        <a href="/community"><p class="head-span">Community</p></a>
+        <a href="/contact"><p class="head-span">Contact</p></a>
+    </div>
+
+    <div class="btn-group btn-float-right">
+        <button class="btn dropdown-toggle " type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+            <img id="login-icon" src="/images/login.png">
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li>
+                <a class="dropdown-item dropdownProp" href="/profile" >
+                    <i class="fa-regular fa-id-badge"></i> &nbsp;
+                    Profile
+                </a>
+            </li>
+          <li>
+                <a class="dropdown-item dropdownProp" href="/signout">
+                    <i class="fa-solid fa-right-from-bracket"></i>  &nbsp;
+                    Sign out
+                </a>
+            </li>
+        </ul>
+      </div>
+    
+    
+</div>
+
+
+<div class="response-msg-div">
+    <p></p>
+</div>
+
+<!--Options-->    
+    <div id="options">
+        <a href="/forum"><p class="optionstext">Search</p> <hr></a>
+        <a href="/forum/answers"><p class="optionstext" style="color: #CF360D;font-weight: bold;">Answered</p> <hr></a>
+        <a href="/forum/questions"><p class="optionstext" >Questions</p> <hr></a>
+        <a href="/forum/post-new-doubt"><p class="optionstext">Post New Doubt</p> </a>
+
+    </div>
+
+<!--Forem Section-->
+    <div id="forum">
+        <h1><b>FORUM</b></h1><br>
+        
+        <% data.forEach(function(datum){ %>
+            
+            <h2> <i class="fa-brands fa-quora"></i> &nbsp; <%= datum.questions.question %></h2>
+
+            <h2><b>Answers:</b></h2>
+
+            <% datum.answers.forEach(function(answer){ %>
+           <div id="discussion" class="vote">
+                                
+                    <h2><img class="profile" src="/images/login.png">&nbsp; <%= answer.username.charAt(0).toUpperCase() + answer.username.slice(1)%></h2>    
+                    <p><%= answer.answer %></p> 
+                    <hr class="divider">
+                    
+                    <button ><i class="fa-regular fa-thumbs-up "> </i> &nbsp; Upvote</button>
+                    <button > <i class="fa-regular fa-thumbs-down ">  </i> &nbsp; Downvote</button>
+                   
+                </div> 
+                <% }) %>  
+                <form action="/post-new-answer-page" method="post">
+                    <input type="hidden" name="question" value="<%= datum.questions.question %>">
+                    <center><button type="submit" class="btn btn-outline-secondary ans-button"><i class="fa-solid fa-pencil"></i> &nbsp; Answer</button></center>
+                </form>   
+                <hr class=" divider">
+        <% }) %>   
+    </div>    
+
+    <%- include('partials/footer') -%>  

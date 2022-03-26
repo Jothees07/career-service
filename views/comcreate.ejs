@@ -1,0 +1,61 @@
+<%- include('partials/header') -%>
+
+<!--Navigation Section-->
+<div  class="nav-new">    
+    <img id="head-icon" src="/images/Alpha-icon.png">
+    <div id="header" style="transform: translateY(12px);">
+        <a href="/home"><p class="head-span" >Home</p></a>
+        <a href="/forum"><p class="head-span" >Forum</p></a>
+        <a href="/community"><p class="head-span" id="activenav">Community</p></a>
+        <a href="/contact"><p class="head-span" >Contact</p></a>
+    </div>
+    <!-- <a href="/signout"><img id="login-icon" src="/images/login.png"></a> -->
+    <div class="btn-group btn-float-right">
+        <button class="btn dropdown-toggle " type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+            <img id="login-icon" src="/images/login.png">
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li>
+                <a class="dropdown-item dropdownProp" href="/profile">
+                    <i class="fa-regular fa-id-badge"></i> &nbsp;
+                    Profile
+                </a>
+            </li>
+          <li>
+                <a class="dropdown-item dropdownProp" href="/signout">
+                    <i class="fa-solid fa-right-from-bracket"></i>  &nbsp;
+                    Sign out
+                </a>
+            </li>
+        </ul>
+      </div>
+    
+    
+</div>
+
+<div class="response-msg-div">
+    <p></p>
+</div>
+
+<div class="sign-div">
+    <div class="sign-border">
+        <h3>Create New Community</h3>
+        <form action="/create-community" method="post" > 
+            <div class="form-floating mb-3">
+                <input type="Username" class="form-control" id="floatingInput" name="channelName" placeholder="Channel Name" required> 
+                <label for="floatingInput">Channel Name</label>
+            </div>
+            <div class="form-floating">
+                <textarea class="form-control" name="description" placeholder="Channel description" id="floatingTextarea2" style="height: 100px" required></textarea>
+                <label for="floatingTextarea2">Channel description</label>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-outline-secondary btn-lg">Submit</button>
+            <button type="reset" class="btn btn-outline-secondary btn-lg">Reset</button><br><br>
+            
+        </form>
+    </div>
+    
+</div><br>
+
+<%- include('partials/footer') -%>

@@ -1,0 +1,68 @@
+<%- include('partials/header') -%>
+
+<!--Navigation Section-->
+<div  class="nav-new">    
+    <img id="head-icon" src="/images/Alpha-icon.png">
+    <div id="header" style="transform: translateY(12px);">
+        <a href="/home"><p class="head-span" >Home</p></a>
+        <a href="/forum"><p class="head-span" id="activenav">Forum</p></a>
+        <a href="/community"><p class="head-span">Community</p></a>
+        <a href="/contact"><p class="head-span">Contact</p></a>
+    </div>
+    <!-- <a href="/signout"><img id="login-icon" src="/images/login.png"></a> -->
+    <div class="btn-group btn-float-right">
+        <button class="btn dropdown-toggle " type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+            <img id="login-icon" src="/images/login.png">
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li>
+                <a class="dropdown-item dropdownProp" href="/profile" >
+                    <i class="fa-regular fa-id-badge"></i> &nbsp;
+                    Profile
+                </a>
+            </li>
+          <li>
+                <a class="dropdown-item dropdownProp" href="/signout">
+                    <i class="fa-solid fa-right-from-bracket"></i>  &nbsp;
+                    Sign out
+                </a>
+            </li>
+        </ul>
+      </div>
+    
+    
+</div>
+
+<div class="response-msg-div">
+    <p></p>
+</div>
+
+  <!--Options-->    
+    <div id="options">
+        <a href="/forum"><p class="optionstext">Search</p> <hr></a>
+        <a href="/forum/answers"><p class="optionstext" >Answered</p> <hr></a>
+        <a href="/forum/questions"><p class="optionstext" >Questions</p> <hr></a>
+        <a href="/forum/post-new-doubt"><p class="optionstext">Post New Doubt</p> </a>
+
+    </div>
+
+<!--Forem Section-->
+    <div id="forum">
+        <h1><b>FORUM</b></h1>
+        <div class="forumQ-border">
+            <h3>Write your view</h3>
+            <form action="/post-new-answer" method="post" > 
+                <p><%= data %></p>
+                <div class="form-floating">
+                    <input type="hidden" name="question" value="<%= data %>">
+                    <textarea class="form-control" name="answer" placeholder="Question" id="floatingTextarea2" style="height: 100px" required></textarea>
+                    <label for="floatingTextarea2">Type your Answer!!</label>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-outline-secondary btn-lg">Post!</button><br><br>
+                
+            </form>
+        </div>
+    </div>      
+
+    <%- include('partials/footer') -%>  

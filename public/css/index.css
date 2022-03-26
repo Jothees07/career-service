@@ -1,0 +1,216 @@
+/*Elements*/
+body
+{
+  background-color: #F8F6F4;
+  font-family: 'Alegreya', serif;;
+}
+hr 
+{ 
+    border-top: 6px solid white;
+} 
+a{
+    text-decoration: none;
+}
+.response-msg-div{
+    width: 98%;
+    margin: auto;
+    /* background: rgb(167, 248, 86); */
+    /* background: #ff6363; */
+}
+.response-msg-div p{
+    margin-top: 20px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/*Header Section*/
+.dropdownProp{
+    font-size: 20px;
+}
+#activenav{
+    color: #CF360D;
+    font-weight: bold;
+}
+#header-img
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height:auto;
+    width: 100%;
+    z-index: -1;
+}
+#head-icon
+{
+    height: 50px;
+    margin-left: 4%;
+    display: inline;
+    
+}
+.head-span
+{
+    display: inline;
+    font-size:22px;
+    margin-left:20px;
+    color: rgb(70, 68, 68);
+    
+}
+
+#login-icon
+{
+    height: 40px;
+    display: inline;
+    
+}
+.btn-check:focus + .btn, .btn:focus {
+    outline: none;
+    box-shadow: none;
+  }
+#titlesec
+{ 
+    
+    margin:110px auto auto;
+    width: max-content;
+}
+#header
+{
+    display: inline;
+    margin-left: 5px;
+    position: absolute;
+}
+#head-section
+{
+    padding-top:30px ;
+    min-height: 800px;
+}
+.h1t
+{
+    font-size: 4.688rem;
+    color:  #CF360D;
+}
+.signUp-btn{
+    margin-top: 10px;
+    background-color: transparent;
+    text-decoration: none;
+    border: 2px solid rgb(68, 67, 67);
+    color: rgb(68, 67, 67);
+    border-radius: 15px;
+    padding: 0 10px;
+    font-size: 18px;
+}
+.signUp-btn:hover{
+    background-color: rgb(68, 67, 67);
+    color: white;
+}
+.nav-new{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #EFE5B6;
+}
+.btn-float-right{
+    float:right;
+    margin-right: 28px;
+}
+/* Signup section */
+.sign-div{
+    height: 450px;
+}
+.sign-border{
+    width: 50%;    
+    height: max-content;
+    margin: 80px auto 0;
+    border:1px solid rgb(70, 68, 68);
+    padding: 30px 30px 0 30px;
+    border-radius: 30px;
+    text-align: center;
+}
+.sign-border h3{
+    color: rgb(70, 68, 68);
+}
+
+/*About Section*/
+#about
+{
+    width: 85%;
+    margin:  auto ;
+}
+.para
+{
+    font-size:18px;
+    color: rgb(73, 73, 73);
+}
+
+.h1
+{
+    font-size:22px;
+    color:  #CF360D;
+    font-weight: bold;
+}
+
+/*Features*/
+
+#features
+{
+    width: 85%;
+    margin: 40px auto;
+    color: rgb(68, 66, 66);
+    
+}
+.feat
+{
+    font-size:19px;
+    color: rgb(61, 58, 58);
+    font-weight: bold;
+}
+.feap
+{
+    font-size:18px;
+    margin-left: 40px;
+}
+/*Career Choices*/
+#career
+{
+    width: 85%;
+    margin: 40px auto;
+}
+.carrow
+{
+    margin: 30px auto;
+
+}
+.carbox
+{
+    min-height: 250px;
+    width: 225px;
+    margin: 30px 25px 10px 25px;
+    padding: 0px ;
+    background-color:  #F6F1DC;
+    border-radius: 30px;
+    text-align: center;
+}
+.carbox .carboxH3 {
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+.carbox h3 {
+    font-size: 18px;
+    text-align: justify;
+    padding:0px 20px 8px;
+}
+#quote
+{ 
+    width: 85%;
+    margin: 100px auto;
+    text-align: center;
+    font-style: italic;
+
+}
+/*Footer Section*/
+#footer
+{
+    height:150px;
+    text-align: center;
+    background-color:#EFE5B6;
+
+}

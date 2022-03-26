@@ -1,0 +1,52 @@
+<%- include('partials/header') -%>
+
+<!--Navigation Section-->
+<div  class="nav-new">    
+    <img id="head-icon" src="/images/Alpha-icon.png">
+    <div id="header" style="transform: translateY(12px);">
+        <a href="/home"><p class="head-span" >Home</p></a>
+        <a href="/forum"><p class="head-span" >Forum</p></a>
+        <a href="/community"><p class="head-span" >Community</p></a>
+        <a href="/contact"><p class="head-span">Contact</p></a>
+    </div>
+
+    <div class="btn-group btn-float-right">
+        <button class="btn dropdown-toggle " type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+            <img id="login-icon" src="/images/login.png">
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li>
+                <a class="dropdown-item dropdownProp" href="/profile" >
+                    <i class="fa-regular fa-id-badge"></i> &nbsp;
+                    Profile
+                </a>
+            </li>
+          <li>
+                <a class="dropdown-item dropdownProp" href="/signout">
+                    <i class="fa-solid fa-right-from-bracket"></i>  &nbsp;
+                    Sign out
+                </a>
+            </li>
+        </ul>
+      </div>
+    
+    
+</div>
+
+
+<div class="response-msg-div">
+    <p></p>
+</div>
+
+<div class="profile-div">
+
+    <div class="profile">
+        <img src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png" alt="img" height="120px"><br><br>
+        <p><b>Name:</b> <%= username %></p>
+        <p><b>Email:</b> <%= email %></p>
+    </div>
+</div>
+
+    
+    
+<%- include('partials/footer') -%>  
